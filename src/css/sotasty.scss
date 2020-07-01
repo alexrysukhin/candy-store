@@ -1,0 +1,70 @@
+.sotasty {
+   background: url(/img/so-tasty-BG.jpg) 100% no-repeat;
+   background-size: cover;
+   padding-bottom: 90px;
+   position: relative;
+   
+
+}
+
+.sotasty__bg-cook {
+   position: absolute;
+   width: 390px;
+   bottom: 0%;
+   left: 57%
+
+}
+
+
+.title {
+   margin:0px;
+   padding-top: 115px;
+   font-size: 62px;
+   color: #2b2f5f;
+   font-family: 'als_malinaregular';
+   margin-bottom: 35px;
+}
+
+.sotaty__desc-container {
+   width: 37%;
+   min-height: 480px;
+   margin-bottom: 40px;
+}
+
+.sotaty__des {
+   font-size: 15px;
+   line-height: 22px;
+   color: #747474;
+}
+
+.special-list {
+   width: 500px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.special-item__img {
+   width: 140px;
+   height: 140px;
+}
+
+.special-item {
+   width: 150px;
+   margin-bottom: 35px;
+}
+.special-item.empty {
+   width: 150px;
+}
+
+.special-item__text {
+   font-size: 16px;
+   font-family: 'als_malinaregular';
+   color: #747474;
+   padding-left: 7px;
+   margin-top: 30px;
+}
+
+
+
+

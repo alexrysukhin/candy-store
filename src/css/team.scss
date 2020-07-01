@@ -1,0 +1,152 @@
+.team {
+   background: url(/img/team-BG.jpg)no-repeat;
+   background-size: cover;
+   padding-top: 85px;
+   padding-bottom: 118px;
+}
+.team__top {
+   display: flex;
+}
+
+.team__title {
+   margin:0;
+   width: 315px;
+   font-size: 62px;
+   color: #2b2f60;
+   font-family: 'als_malinaregular';
+}
+
+.cooks__list {
+   display: flex;
+   margin: 0 auto;
+   .cooks__link {
+      display: block;
+      text-decoration: none;
+      padding: 22px 35px 20px 28px;
+   }
+  
+         
+   .cooks__item{
+      
+      margin-right: 18px; 
+      box-sizing: border-box;
+      position: relative;
+      border-radius: 20px;
+      transition: .2s;
+      &:after {
+         content: '';
+         display: block;
+         position: absolute;
+         border:10px solid transparent;
+         border-top-color: transparent;
+         border-bottom: 0;
+         left: 45%;
+         top: 100%;
+         transition: .2s;
+         }
+   }
+  
+}
+.cooks__item.active {
+   background-color: #893213;
+   .cook__name {
+      color:#ffa92b;
+   }
+   .cook__position {
+      color: #c6a69f;
+   }
+   &:after {
+      border-top-color: #893213;
+   }
+}
+
+
+.team__name-holder {
+   width: 140px;
+}
+
+.cooks__link:last-child {
+   margin-right: 0;
+}
+
+.cook__name {
+   display: block;
+   font-size: 30px;
+   color: #2b2f60;
+   font-family: 'als_malinaregular';
+}
+
+.cook__position {
+   font-size: 17px;
+   color: gray;
+   margin-top: 10px;
+
+}
+
+.cooks__item:hover {
+   background-color: #893213;
+   .cook__name {
+      color:#ffa92b;
+   }
+   .cook__position {
+      color: #c6a69f;
+   }
+   
+
+}
+
+///////    ОПИСАНИЕ ПОВАРА   ////////////
+
+
+.cook-description {
+   margin-top: 60px;
+   display: flex;
+   box-sizing: border-box;
+}
+
+.cook-person__desc {
+   display: none;
+   margin-top: 40px;
+   width: 270px;
+   font-size: 14px;
+   line-height: 21px;
+   color: #747474;
+   &.active {
+      display: block;
+   }
+   p {
+      margin: 30px 0;
+   }
+}
+
+.cook-img-holder {
+   position: relative;
+   width: 490px;
+   min-height: 580px;
+   position: relative;
+   
+   img {
+      display: block;
+      width: 100%;
+      position: absolute;
+      bottom: 0%;
+   }
+}
+
+.cook-position__desc {
+   display: none;
+   margin-top: 40px;
+   width: 340px;
+   font-size: 14px;
+   line-height: 21px;
+   color: #747474;
+   &.active {
+       display: block;
+   }
+   p {
+      margin: 30px 0;
+   }
+}
+
+
+

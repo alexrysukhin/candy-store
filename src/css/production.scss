@@ -1,0 +1,60 @@
+.production-container {
+   width: 1040px;
+   margin: 0 auto;
+}
+
+
+.production {
+   background-image: url(/img/production-BG_02.jpg);
+   background-size: cover;
+   text-align: center;   
+}
+
+.desc-container {
+   margin: 0 auto;
+   width: 90%;
+   margin-bottom: 85px;
+}
+
+.production__link {
+   text-decoration: none;
+   width: 215px;
+   margin-bottom: 50px;
+}
+
+.production__desc {
+   font-size: 16px;
+   font-weight: bold;
+   color: #463838;
+   margin-top: 15px;
+}
+
+.production__list {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.production__item-amty {
+   width: 255px;
+}
+
+
+
+.production__item-title {
+   font-size: 35px;
+   font-family: 'als_malinaregular';
+   color: #33375f;
+   margin-top: 20px;
+   margin-bottom: 12px;
+}
+
+.production__item-desc {
+   font-size: 15px;
+   letter-spacing: .2px;
+   color: #685252;
+   font-weight: regular;
+   line-height: 23px;
+   
+}
+

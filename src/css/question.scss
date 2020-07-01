@@ -1,0 +1,61 @@
+.question { 
+   background: url(/img/BGakorderon.jpg) no-repeat;
+   background-size: cover;
+   padding-top: 100px;
+   padding-bottom: 60px;
+}
+
+.question__title {
+   font-size: 40px;
+   color: white;
+   font-family: 'als_malinaregular';
+   margin-bottom: 75px;
+   text-align: center;
+}
+
+
+.question__list {
+   margin-left: 70px;
+   display:flex;
+   flex-direction: column;
+   list-style-type: decimal;
+   padding-left: 30px;
+}
+.question__item{
+   color: white;
+   font-size: 22px;
+}
+.question__trigger {
+   display: inline-block;
+   text-decoration: none;
+   font-size: 22px;
+   color: white;
+   margin-bottom: 40px;
+   padding-bottom: 10px;
+   border-bottom: 3px dashed white;
+   transition: .5s;
+   cursor: pointer;
+   &:hover {
+      border-color: transparent;
+      color: yellow;
+      
+   }
+}
+
+
+.question__garmoshka {
+   display: none;
+   margin-top: -20px;
+   margin-bottom: 40px;
+   margin-left: 40px;
+  &.active{
+     display: block;
+  }
+}
+
+.garmoshka__item{
+   margin-bottom: 0;
+   font-size: 16px;
+   line-height: 25px;
+ }
+ 

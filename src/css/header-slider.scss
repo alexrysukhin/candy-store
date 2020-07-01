@@ -1,0 +1,235 @@
+.slider {
+   display: flex;
+   position: relative;
+   letter-spacing: .5px;
+}
+.slider__BG {
+   position: absolute;
+   text-transform: uppercase;
+   font-size: 150px;
+   color: #d75759;
+   font-family: 'als_malinaregular';
+   opacity: .4;
+   top: 47%;
+   
+}
+
+.slider__left {
+   width: 12%;
+   padding-top: 153px;
+   z-index: 5;
+}
+
+.Ingredients__item {
+   background-color:#ae2e33 ;
+   display: inline-block;
+   padding: 10px;
+   border-radius: 50%;
+   transition: .5s;
+   cursor: pointer; 
+   margin-left: 25px;
+   margin-bottom: 10px;
+
+}
+.Ingredients__link{
+  display: inline-block; 
+}
+.ingridient__title {
+   font-size: 15px;
+   color: #f6dbdc;
+}
+.Ingredients__dropdown {
+   position: absolute;
+   background-color: #faefef;
+   opacity: .8;
+   padding: 20px;
+   box-sizing: border-box;
+   border-radius: 15px;
+   top: 135px;
+   left: 85px;
+   margin-left: -2000px;
+   z-index: 1000;
+   &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 15px 15px 15px;  
+      border-color: transparent #faefef transparent transparent;  /* red — цвет */ 
+      bottom: 75%;
+      right: 100%;
+   }
+   &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      height: 100%;
+      width: 40px;
+      bottom: 0%;
+      right: 100%
+   }
+
+}
+
+.Ingredients__item:hover {
+   background-color: #fca211;
+   .Ingredients__dropdown{
+      
+      margin-left: 0;
+   }
+}
+
+.Ingredients__dropdown-item {
+   line-height: 35px;
+   align-items: center;
+   position: relative;
+}
+
+.food-icon {
+   position: absolute;
+   display:inline-block;
+   width: 25px;
+   top: 10%;
+   
+   img {
+      display: block;
+      width: 100%;
+   }
+}
+
+.food-name {
+   margin-left: 35px;
+   margin-right: 40px;
+}
+
+.shelf-life {
+   margin-top: 200px;
+}
+
+.shelr-life_text {
+   font-size: 13px;
+   font-weight: regular;
+   color: #e67c7e;
+}
+
+.shelf-life__time {
+   font-size: 24px;
+   font-family: 'als_malinaregular';
+   color: #fff;
+}
+
+//slider__center
+
+.slider__center {
+   width: 48%;
+   position: relative;
+   z-index: 1;
+}
+.slider__img-holder {
+   margin-top: 75px;
+   width: 450px;
+   position: absolute;
+   left: 8%;
+   top: 3%;
+   
+}
+img {
+   display: block;
+   width: 100%;
+}
+.slider__right{
+   width: 40%;
+   z-index: 3;
+}
+
+.slider__title {
+   margin-top: 120px;
+   font-size: 62px;
+   font-family: 'als_malinaregular';
+   color: white;
+   opacity: .9;
+}
+
+.slider__desc {
+   margin-top: 25px;
+   font-size: 15px;
+   color: #fae3e4;
+   line-height: 21px;
+}
+
+.slider__price {
+   font-size: 62px;
+   font-family: 'als_malinaregular';
+   color: white;
+}
+
+.slider__info {
+   width: 312px;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 52px;
+}
+
+.btn-order {
+   margin-top: 15px;
+   display: inline-block;
+   font-size: 14px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #a4151c;
+   background-color: #fca211;
+   width: 107px;
+   text-align: center;
+   // box-sizing: border-box;
+   padding: 15px 0;
+   border-radius: 20px;
+   &:hover {
+   background-color: #e28f0a;
+   box-shadow: 0px 3px 20px black;
+   transition: .3s;
+   
+   }
+}  
+
+.slider-circls__list{
+   width: 210px;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   margin-top: 50px;
+
+   
+}
+.slider-circle__item {
+   display:inline-block;
+   width: 10px;
+   height: 10px;
+   background: white;
+   border-radius: 50%;
+   position: relative;
+   &:before {
+      content: '';
+      display:block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: transparent;
+      left: -4px;
+      top: -5px;
+      
+
+   }
+
+}
+
+
+// .slider-circle.active {
+//    background-color: #a4151c;
+//    width: 8px;
+//    height: 8px;
+//    border-radius: 50%;
+// }
